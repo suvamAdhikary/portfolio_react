@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Avatar from "../../Assets/Images/me.png";
+import Scroll from "../../Assets/Images/scroll.svg";
 
 const Wrapper = styled.div`
     display: flex;
@@ -150,10 +152,10 @@ export default function Intro() {
                     </Description>
                 </div>
             </Left>
-            <img src="src/Assets/Images/scroll.svg" alt="scroll" className="main__scroll"/>
+            <img src={Scroll} alt="scroll" className="main__scroll"/>
             <Right>
                 <div className="img__bg"></div>
-                <img src="src/Assets/Images/me.png" alt="profilepicture" />
+                <img src={Avatar} alt="avatar"/>
             </Right>
         </Wrapper>
     </>)

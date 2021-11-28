@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import AboutImg from "../../Assets/Images/about.jpg";
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -60,7 +61,7 @@ export default function About() {
             <Left>
                 <div className="img__bg"></div>
                 <div className="about__img">
-                    <img src="src/Assets/Images/about.jpg" alt="about" />
+                    <img src={AboutImg} alt="about" />
                 </div>
             </Left>
             <Right>
