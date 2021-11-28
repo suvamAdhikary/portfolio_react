@@ -10,6 +10,13 @@ const Wrapper = styled.div`
         position: absolute;
         bottom: 20px;
     }
+
+    @media screen and (max-width: 480px){
+
+        flex-direction: column;
+
+    }
+
 `;
 const Left = styled.div`
     flex: 1;
@@ -23,6 +30,15 @@ const Left = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (max-width: 480px){
+
+            padding: 10px;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     div > h2{
@@ -44,7 +60,7 @@ const Right = styled.div`
 
     .img__bg{
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-        background-color: aquamarine;
+        background-color: ${(props) => props.theme?.highlighter};
         width: 100%;
         height: 100%;
         position: absolute;
@@ -94,10 +110,22 @@ const Titles = styled.div`
         /* padding: 0 50px; */
         /* justify-content: center; */
     }
+
+    @media screen and (max-width: 480px){
+
+        margin-top: 20px;
+
+    }
 `;
 
 const Description = styled.p`
     /* padding: 50px; */
+
+    @media screen and (max-width: 480px){
+
+        display: none;
+
+    }
 `;
 
 export default function Intro() {

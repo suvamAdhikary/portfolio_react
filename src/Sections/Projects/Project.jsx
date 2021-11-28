@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     }
 
     .project__parent{
+        width: 100%;
         padding: 50px 100px;
         display: flex;
         flex-direction: column;
