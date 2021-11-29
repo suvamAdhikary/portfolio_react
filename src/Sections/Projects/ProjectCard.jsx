@@ -4,13 +4,13 @@ import styled from "styled-components";
 const Wrapper = styled.div`
 
     margin: 20px 10px;
-    border: 2px solid #f3f2f2;
+    border: 2px solid ${(props) => props.theme?.highlighter};
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
 
     .browser__parent{
         height: 20px;
-        background-color: #f3f2f2;
+        background-color: ${(props) => props.theme?.highlighter};
         display: flex;
         align-items: center;
         position: sticky;
@@ -20,8 +20,14 @@ const Wrapper = styled.div`
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #FFFFFF;
+        background-color: ${(props) => props.theme?.bg_clr};
         margin: 3px;
+    }
+
+    @media screen and (max-width: 480px){
+
+        width: 80vw;
+        /* height: 25vh; */
     }
 `;
 

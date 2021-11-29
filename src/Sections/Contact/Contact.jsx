@@ -23,6 +23,7 @@ const Wrapper = styled.div`
         @media screen and (max-width: 480px){
 
             flex-direction: column;
+            padding: 0px 50px;
 
         }
     }
@@ -38,8 +39,13 @@ const Left = styled.div`
     flex: 1;
 
     h1 {
-        font-size: 50px;
+        font-size: 60px;
         width: 80%;
+
+        @media screen and (max-width: 480px){
+
+            font-size: 30px;
+        }
     }
 
     img {
@@ -53,6 +59,12 @@ const Left = styled.div`
         margin: 50px 0px;
         font-weight: 300;
         width: 70%;
+
+        @media screen and (max-width: 480px){
+
+            margin: 20px 0px;
+            width: 100%;
+        }
     }
 `;
 
@@ -65,6 +77,13 @@ const Right = styled.div`
 
     form{
         margin-top: 20px;
+
+        @media screen and (max-width: 480px){
+
+            margin-top: 0px;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     input {
@@ -75,6 +94,14 @@ const Right = styled.div`
         margin: 10px 0px;
         font-size: 14px;
         padding-left: 10px;
+
+        @media screen and (max-width: 480px){
+
+            width: 46%;
+            height: 40px;
+            margin: 10px;
+            margin-left: 0px;
+        }
     }
     textarea {
         width: 100%;
@@ -89,6 +116,11 @@ const Right = styled.div`
         color: ${(props) => props.theme?.bg_clr};
         font-weight: 500;
         cursor: pointer;
+
+        @media screen and (max-width: 480px){
+
+            margin-top: 10px;
+        }
     }
 `;
 

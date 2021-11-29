@@ -9,7 +9,8 @@ const Wrapper = styled.div`
     @media screen and (max-width: 480px){
 
         flex-direction: column;
-
+        text-align: center;
+        margin-top: 50px;
     }
 `;
 
@@ -27,8 +28,13 @@ const Left = styled.div`
         left: 50px;
         height: 70vh;
         width: 60%;
-        background-color: gray;
+        background-color: ${(props) => props.theme?.highlighter};
         border-radius: 30px;
+
+        @media screen and (max-width: 480px){
+
+            display: none;
+        }
     }
 
     .about__img{
@@ -37,6 +43,11 @@ const Left = styled.div`
         border-radius: 30px;
         position: relative;
         overflow: hidden;
+
+        @media screen and (max-width: 480px){
+
+            height: 30vh;
+        }
     }
 
     img {
@@ -44,10 +55,23 @@ const Left = styled.div`
         width: 100%;
         object-fit: cover;
     }
+
+
+    @media screen and (max-width: 480px){
+
+        width: 100%;
+
+    }
 `;
 
 const Right = styled.div`
     flex: 1;
+
+    @media screen and (max-width: 480px){
+
+        padding: 20px;
+
+    }
 `;
 
 

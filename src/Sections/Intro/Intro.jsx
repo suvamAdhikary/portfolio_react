@@ -101,6 +101,22 @@ const Titles = styled.div`
                 transform: translateY(-200px);
             }
         }
+
+        @media screen and (max-width: 480px){
+
+            width: 100%;
+            align-items: center;
+
+        }
+
+        div {
+
+            @media screen and (max-width: 480px){
+
+                align-items: center;
+
+            }
+        }
     }
 
     div > div{
@@ -111,11 +127,19 @@ const Titles = styled.div`
         align-items: center;
         /* padding: 0 50px; */
         /* justify-content: center; */
+
+
+        @media screen and (max-width: 480px){
+
+            align-items: center;
+
+        }
     }
 
     @media screen and (max-width: 480px){
 
         margin-top: 20px;
+        align-items: center;
 
     }
 `;

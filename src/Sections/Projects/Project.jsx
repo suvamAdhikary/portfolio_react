@@ -22,6 +22,11 @@ const Wrapper = styled.div`
         align-items: center;
         text-align: center;
     }
+
+    @media screen and (max-width: 480px){
+
+        padding: 10px;
+    }
 `;
 
 const projects = [
