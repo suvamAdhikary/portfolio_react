@@ -35,7 +35,7 @@ const projects = [
     {   
         id: nanoid(4),
         name: "CapdaS",
-        summary: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
+        summary: "Capdas is our self designed and developed mobile website which provides sustainable clothing store and a platform for national seller and tailors to provide their services online.",
         tech: ["HTML", "CSS", "JavaScript", "MongoDB", "Express", "React", "Node"],
         git: "https://github.com/suvamAdhikary/Capdas-ECommerce.git",
         demo: "jkhjkh",
@@ -46,7 +46,7 @@ const projects = [
     {   
         id: nanoid(4),
         name: "Myglamm Clone with Backend",
-        summary: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
+        summary: "It is an international e-commerce store of womens products, where anyone from anywhere can buy beauty products.",
         tech: ["HTML", "CSS", "JavaScript", "MongoDB", "Express", "Node", "EJS"],
         git: "https://github.com/suvamAdhikary/MyGlamm-with-Backend.git",
         demo: "jkhjkh",
@@ -58,7 +58,7 @@ const projects = [
     {   
         id: nanoid(4),
         name: "Myglamm Clone",
-        summary: "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
+        summary: "It is an international e-commerce store of womens products, where anyone from anywhere can buy beauty products.",
         tech: ["HTML", "CSS", "JavaScript"],
         git: "https://github.com/suvamAdhikary/MyGlamm.git",
         demo: "jkhjkh",

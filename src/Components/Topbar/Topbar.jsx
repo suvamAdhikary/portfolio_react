@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import Menu from "../Menu/Menu";
-import Logo from "../../Assets/Images/logo.png"
-
+import Logo from "../../Assets/Images/logo.png";
+import Resume from "../../Assets/Docs/resume.pdf";
 
 const Wrapper = styled.div`
 
     width: 100%;
     height: 60px;
     background-color: ${(props) => props.theme?.highlighter};
-    color: #fff;
+    color: ${(props) => props.theme?.fnt_clr};
     position: fixed;
     top: 0;
     z-index: 5;
@@ -45,10 +45,22 @@ const Left = styled.div`
 
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     a > img {
         width: 100%;
         height: 50px;
+    }
+
+    .resume__btn{
+        background-color: ${(props) => props.theme?.btn_clr};
+        border: none;
+        margin-left: 50px;
+        color: ${(props) => props.theme?.bg_clr};
+        height: 40px;
+        border-radius: 10px;
+        width: 120px;
+        cursor: pointer;
     }
 `;
 
@@ -79,7 +91,12 @@ export default function Topbar({menuOpen, setMenuOpen}){
                 <Left>
                     <a id="logo" href="#intro">
                         <img src={Logo} alt="logo" />
-                    </a>  
+                    </a> 
+                    <a href={Resume} target="_blank" rel="noopener noreferrer">
+                        <button className="resume__btn">
+                            RESUME
+                        </button> 
+                    </a>
                 </Left>
                 <Right>
                     <div className="hamburger" onClick={()=> setMenuOpen(!menuOpen)}>

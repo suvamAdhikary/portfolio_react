@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ImHtmlFive } from 'react-icons/im';
-import { SiCss3, SiJavascript, SiRedux, SiExpress, SiMongodb, SiNextdotjs, SiVisualstudiocode, SiPostman } from 'react-icons/si';
+import { SiCss3, SiJavascript, SiRedux, SiExpress, SiMongodb, SiNextdotjs, SiVisualstudiocode, SiPostman, SiTypescript } from 'react-icons/si';
 import { RiReactjsFill, RiTerminalBoxFill } from 'react-icons/ri';
 import { FaSass, FaNodeJs, FaGitAlt, FaNpm, FaChrome } from 'react-icons/fa';
 
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     /* height: calc(100vh - 60px); */
     justify-content: space-around;
     padding: 20px 30px;
-
+    margin-top: 100px;
 
     .skills__main{
         height: 80%;
@@ -85,6 +85,10 @@ export default function Skills(){
                         <div className="skill__card">
                             <h1><SiRedux /></h1>
                             <p>Redux</p>
+                        </div>
+                        <div className="skill__card">
+                            <h1><SiTypescript /></h1>
+                            <p>Typescript</p>
                         </div>
                         <div className="skill__card">
                             <h1><FaSass /></h1>

@@ -62,8 +62,7 @@ const Left = styled.div`
         bottom: 10px;
         left: 50%;
 
-        img{
-            width: 30px;
+        >h1 {
             animation: arrowBlink 2000ms infinite;
         }
 

@@ -7,6 +7,12 @@ const Wrapper = styled.div`
     border: 2px solid ${(props) => props.theme?.highlighter};
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
+    width: 80vw;
+
+    > h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
 
     .browser__parent{
         height: 20px;
@@ -22,6 +28,10 @@ const Wrapper = styled.div`
         border-radius: 50%;
         background-color: ${(props) => props.theme?.bg_clr};
         margin: 3px;
+    }
+
+    .pcard__main{
+        padding: 10px;
     }
 
     @media screen and (max-width: 480px){
@@ -44,12 +54,12 @@ export default function ProjectCard({props}){
             <div className="browser_circle"></div>
         </div>
         {/* <img src="#" alt="hero" /> */}
-        <h1>{name}</h1>
-        <div>
+        <h2>{name}</h2>
+        <div className="pcard__main">
             <div>
                 <div>
                     <p>{summary}</p>
-                    <p>{tech.join(", ")}</p>
+                    <p>{tech.join("  ")}</p>
                 </div>
                 {/* <iframe src={video} frameborder="0"><img src="" alt="" /></iframe> */}
             </div>

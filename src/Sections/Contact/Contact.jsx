@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import Phone from "../../Assets/Images/phone.png";
-import Email from "../../Assets/Images/email.png";
-import Address from "../../Assets/Images/address.png";
 import { useRef, useState } from "react";
 import emailjs from 'emailjs-com';
+import Footer from "../../Components/Footer";
+import { MdEmail, MdCall, MdLocationOn } from 'react-icons/md';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiGithub } from 'react-icons/si';
 
 const Wrapper = styled.div`
     height: calc(100vh - 60px);
@@ -50,17 +51,25 @@ const Left = styled.div`
         }
     }
 
-    img {
-        width: 30px;
-        height: 30px;
-        margin-right: 20px;
-    }
     .contact__info--item{
         display: flex;
         align-items: center;
-        margin: 50px 0px;
+        margin: 30px 0px;
         font-weight: 300;
         width: 70%;
+
+        > h2 {
+            /* width: 30px;
+            height: 30px; */
+            font-size: 2.5em;
+            margin-right: 20px;
+        }
+
+        .social__link{
+            font-size: 2.5em;
+            margin-right: 20px;
+            color: ${(props) => props.theme?.fnt_clr};
+        }
 
         @media screen and (max-width: 480px){
 
@@ -161,16 +170,27 @@ export default function Contact(){
             <Left>
                 <h1>Contact</h1>
                 <div className="contact__info--item">
-                    <img src={Phone} alt="phone" />
+                    <h2><MdCall /></h2>
                     <p>+91-8101846457</p>
                 </div>
                 <div className="contact__info--item">
-                    <img src={Email} alt="email" />
+                    <h2><MdEmail /></h2>
                     <p>adhikary.saheb408@gmail.com</p>
                 </div>
                 <div className="contact__info--item">
-                    <img src={Address} alt="address" />
+                    <h2><MdLocationOn /></h2>
                     <p>India, West Bengal, North 24 Parganas</p>
+                </div>
+                <div  className="contact__info--item">
+                    <a href="https://www.linkedin.com/in/suvam-adhikary/" target="_blank" rel="noopener noreferrer">
+                        <h2 className="social__link"><FaLinkedin /></h2>
+                    </a>
+                    <a href="https://github.com/suvamAdhikary" target="_blank" rel="noopener noreferrer">
+                        <h2 className="social__link"><SiGithub /></h2>
+                    </a>
+                    <a href="https://twitter.com/suvamAdhikary92" target="_blank" rel="noopener noreferrer">
+                        <h2 className="social__link"><FaTwitter /></h2>
+                    </a>
                 </div>
             </Left>
             <Right>
@@ -185,5 +205,6 @@ export default function Contact(){
                 </form>
             </Right>
         </div>
+        <Footer />
     </Wrapper>)
 }
