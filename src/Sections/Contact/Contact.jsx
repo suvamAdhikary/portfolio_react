@@ -96,6 +96,14 @@ const Right = styled.div`
         margin: 10px 0px;
         font-size: 14px;
         padding-left: 10px;
+        
+        &:first-child, &:nth-child(3) {
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        &:nth-child(2), &:nth-child(4) {
+            border-radius: 0px 10px 10px 0px;
+        }
 
         @media screen and (max-width: 480px){
 
@@ -110,6 +118,7 @@ const Right = styled.div`
         margin: 10px 0px;
         font-size: 14px;
         padding-left: 10px;
+        border-radius: 10px;
     }
     button {
         border: none;
@@ -118,6 +127,7 @@ const Right = styled.div`
         color: ${(props) => props.theme?.bg_clr};
         font-weight: 500;
         cursor: pointer;
+        border-radius: 10px;
 
         @media screen and (max-width: 480px){
 

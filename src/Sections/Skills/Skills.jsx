@@ -48,7 +48,7 @@ const Wrapper = styled.div`
         align-items: center;
         gap: 5px;
         background-color: ${(props) => props.theme?.highlighter};
-        min-height: 150px;
+        min-height: 100px;
         min-width: 150px;
         border-radius: 10px;
     }
@@ -63,8 +63,8 @@ export default function Skills(){
                 <h1>My Skills</h1>
             </div>
             <div className="skills__main">
-                <div className="skills__sections">
-                    <h2>Front-end</h2>
+                <fieldset className="skills__sections">
+                    <legend>Front-end</legend>
                     <div className="skills__spread">
                         <div className="skill__card">
                             <h1><ImHtmlFive /></h1>
@@ -91,9 +91,9 @@ export default function Skills(){
                             <p>Sass</p>
                         </div>
                     </div>
-                </div>
-                <div className="skills__sections">
-                    <h2>Back-end</h2>
+                </fieldset>
+                <fieldset className="skills__sections">
+                    <legend>Back-end</legend>
                     <div className="skills__spread">
                         <div className="skill__card">
                             <h1><FaNodeJs /></h1>
@@ -116,9 +116,9 @@ export default function Skills(){
                             <p>Next.js</p>
                         </div>
                     </div>
-                </div>
-                <div className="skills__sections">
-                    <h2>Tools</h2>
+                </fieldset>
+                <fieldset className="skills__sections">
+                    <legend>Tools</legend>
                     <div className="skills__spread">
                     <div className="skill__card">
                         <h1><RiTerminalBoxFill /></h1>
@@ -145,7 +145,7 @@ export default function Skills(){
                             <p>Postman</p>
                         </div>
                     </div>
-                </div>
+                </fieldset>
                 {/* <div className="skills__sections">
 
                 </div> */}
