@@ -4,6 +4,12 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
     /* width: 100vw; */
+    scrollbar-width: none;
+      &::-webkit-scrollbar{
+          display: none;
+      }
+    scroll-behavior: smooth !important;
+    scroll-snap-type: y mandatory;
 }
 
 html {
@@ -14,7 +20,7 @@ html {
     }
     *, *::before, *::after {
       box-sizing: inherit;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
     body, h1, h2, h3, h4, h5, h6, p, ol, ul, div, main, nav, section, header, footer {
       margin: 0;
@@ -30,12 +36,18 @@ html {
     } */
     a, a:visited, a:hover {
       text-decoration: none;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
     input, &::placeholder, a, textarea {
         color: ${(props) => props.theme?.bg_clr};
+        font-family: 'Roboto', sans-serif;
     }
     input, textarea {
         background-color: ${(props) => props.theme?.fnt_clr};
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .App{
+      height: 100vh;
     }
 `;

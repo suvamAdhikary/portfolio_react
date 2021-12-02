@@ -9,8 +9,8 @@ export const ThemeContextProvider = ({children}) => {
 
     const { light, dark } = Theme;
 
-    const [theme, setTheme] = useState("light");
-    const [colors, setColors] = useState(light);
+    const [theme, setTheme] = useState("dark");
+    const [colors, setColors] = useState(dark);
 
     const toggleTheme = (theme) => {
 

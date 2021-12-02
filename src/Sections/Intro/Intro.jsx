@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import Avatar from "../../Assets/Images/me.png";
-import Scroll from "../../Assets/Images/scroll.svg";
+import DownArrow from "../../Utils/DownArrow";
+
 
 const Wrapper = styled.div`
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 60px);
+    width: 100vw;
 
     .main__scroll{
         width: 30px;
@@ -25,6 +27,7 @@ const Left = styled.div`
     display: flex;
     align-items: center;
     /* justify-content: center; */
+    position: relative;
 
     .left__wrapper {
         padding: 50px;
@@ -46,10 +49,28 @@ const Left = styled.div`
     div > h2{
         font-size: 30px;
         font-weight: 300;
+        margin-bottom: 0px;
     }
 
     div > h1{
+        margin: 0px;
         font-size: 60px;
+    }
+
+    > a{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        >h1 {
+            animation: arrowBlink 2000ms infinite;
+        }
+
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
+            }
+        }
     }
 `;
 const Right = styled.div`
@@ -157,7 +178,7 @@ const Description = styled.p`
 export default function Intro() {
 
     return (<>
-        <Wrapper>
+        <Wrapper id="intro" >
             <Left>
                 <div className="left__wrapper">
                     <h2>Hello, My name is</h2>
@@ -175,8 +196,12 @@ export default function Intro() {
                         I am trained full stack developer, specializing in MERN stack, Data Structure, Algorithm. 
                     </Description>
                 </div>
+                {/* <a href="#about">
+                    <img src={Down} alt="down" />
+                </a> */}
+                <DownArrow nextPage={"#about"}/>
             </Left>
-            <img src={Scroll} alt="scroll" className="main__scroll"/>
+            {/* <img src={Scroll} alt="scroll" className="main__scroll"/> */}
             <Right>
                 <div className="img__bg"></div>
                 <img src={Avatar} alt="avatar"/>
