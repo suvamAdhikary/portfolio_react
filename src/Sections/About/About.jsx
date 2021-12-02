@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import AboutImg from "../../Assets/Images/about.jpg";
+import DownArrow from "../DownArrow";
+
 
 const Wrapper = styled.div`
-    height: 100vh;
+    /* height: calc(100vh - 60px); */
+    height: 100vh !important;
+    width: 100vw;
     display: flex;
     align-items: center;
 
@@ -66,6 +70,25 @@ const Left = styled.div`
 
 const Right = styled.div`
     flex: 1;
+    position: relative;
+
+    > a{
+        position: absolute;
+        top: 280%;
+        right: 55%;
+
+        img{
+            width: 30px;
+            animation: arrowBlink 2000ms infinite;
+        }
+
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
+            }
+        }
+    }
+
 
     @media screen and (max-width: 480px){
 
@@ -80,7 +103,7 @@ export default function About() {
 
     return(<>
 
-        <Wrapper>
+        <Wrapper id="about" >
 
             <Left>
                 <div className="img__bg"></div>
@@ -94,6 +117,7 @@ export default function About() {
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat duis aute irure dolor in reprehende.</p>
+                <DownArrow nextPage="#project" />
             </Right>
 
         </Wrapper>

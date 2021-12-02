@@ -7,6 +7,10 @@ import Contact from './Sections/Contact/Contact';
 import Intro from './Sections/Intro/Intro';
 import Project from './Sections/Projects/Project';
 import { GlobalStyles } from './Components/styles/Global';
+import Sections from './Sections/Sections';
+import Header from './Components/Header';
+
+
 
 function App() {
 
@@ -17,11 +21,13 @@ function App() {
       <>
       <GlobalStyles />
     <div className="App">
-      <ThemeBtn />
-      <Intro />
+      <Header />
+      {/* <ThemeBtn /> */}
+      <Sections />
+      {/* <Intro />
       <About />
       <Project />
-      <Contact />
+      <Contact /> */}
     </div>
     </>
     </ThemeProvider>

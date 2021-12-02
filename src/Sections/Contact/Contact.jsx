@@ -6,11 +6,13 @@ import { useRef, useState } from "react";
 import emailjs from 'emailjs-com';
 
 const Wrapper = styled.div`
-    height: 100vh;
+    height: calc(100vh - 60px);
+    width: 100vw;
     position: relative;
+    margin-top: 100px;
 
     .contact__bg{
-        height: 100vh;
+        height: calc(100vh - 60px);
         width: 20px;
         background-color: ${(props) => props.theme?.highlighter};
         position: absolute;
@@ -143,7 +145,7 @@ export default function Contact(){
               );
     };
 
-    return (<Wrapper>
+    return (<Wrapper id="contact" >
         <div className="contact__bg"></div> 
         <div className="contact__wrapper">
             <Left>

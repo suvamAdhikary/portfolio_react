@@ -11,8 +11,8 @@ const Wrapper = styled.div`
     border: 1px solid ${(props) => props.theme?.brdr_clr};
     background-color: ${(props) => props.theme?.tgl_clr};
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 100px;
     z-index: 999;
     display: flex;
     align-items: center;

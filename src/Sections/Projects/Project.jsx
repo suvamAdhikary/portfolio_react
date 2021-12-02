@@ -3,6 +3,8 @@ import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 
 const Wrapper = styled.div`
+    height: calc(100vh - 60px);
+    width: 100vw;
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -70,7 +72,7 @@ export default function Project() {
 
     return (<>
     
-        <Wrapper>
+        <Wrapper id="project" >
 
             <h1>My Works</h1>
 
