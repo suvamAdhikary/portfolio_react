@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import Avatar from "../../Assets/Images/me.png";
-import Scroll from "../../Assets/Images/scroll.svg";
-import Down from "../../Assets/Images/down.png";
-import DownArrow from "../DownArrow";
+import DownArrow from "../../Utils/DownArrow";
 
 
 const Wrapper = styled.div`

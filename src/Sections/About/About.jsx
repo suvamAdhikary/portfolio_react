@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import AboutImg from "../../Assets/Images/about.jpg";
-import DownArrow from "../DownArrow";
+import DownArrow from "../../Utils/DownArrow";
 
 
 const Wrapper = styled.div`

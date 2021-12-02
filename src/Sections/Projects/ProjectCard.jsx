@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Button from "../../Utils/Button";
 
 const Wrapper = styled.div`
 
@@ -53,11 +53,12 @@ export default function ProjectCard({props}){
                 </div>
                 {/* <iframe src={video} frameborder="0"><img src="" alt="" /></iframe> */}
             </div>
-            {/* <div>
-                <a href={git} target="_blank" rel="noopener noreferrer">GIT</a>
-                <a href={blog} target="_blank" rel="noopener noreferrer">BLOG</a>
-                <a href={demo} target="_blank" rel="noopener noreferrer">DEMO</a>
-            </div> */}
+            <div>
+                <Button goTo={git} >Source Code</Button>
+                {/* <a href={git} target="_blank" rel="noopener noreferrer">GIT</a> */}
+                {/* <a href={blog} target="_blank" rel="noopener noreferrer">BLOG</a>
+                <a href={demo} target="_blank" rel="noopener noreferrer">DEMO</a> */}
+            </div>
         </div>
     </Wrapper>)
 
