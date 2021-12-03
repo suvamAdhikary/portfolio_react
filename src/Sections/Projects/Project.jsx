@@ -63,7 +63,7 @@ const projects = [
         tech: ["HTML", "CSS", "JavaScript"],
         git: "https://github.com/suvamAdhikary/MyGlamm.git",
         demo: "https://myglamm-clone-jir1r73x1-suvamadhikary.vercel.app/",
-        blog: "",
+        blog: "https://medium.com/@yashgarg1402/859f9f1b03e7",
         video: "",
         hero: ""
     }
