@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
 
     h1 {
         font-size: 50px;
@@ -38,10 +39,10 @@ const projects = [
         summary: "Capdas is our self designed and developed mobile website which provides sustainable clothing store and a platform for national seller and tailors to provide their services online.",
         tech: ["HTML", "CSS", "JavaScript", "MongoDB", "Express", "React", "Node"],
         git: "https://github.com/suvamAdhikary/Capdas-ECommerce.git",
-        demo: "jkhjkh",
-        blog: "juhoih",
-        video: "nhoijhuoi",
-        hero: "feefwef"
+        demo: "https://capdas-suvamadhikary.vercel.app/",
+        blog: "https://mukhiarambhu.hashnode.dev/developing-capdas-a-sustainabe-e-commerce-store",
+        video: "",
+        hero: ""
     },
     {   
         id: nanoid(4),
@@ -49,11 +50,11 @@ const projects = [
         summary: "It is an international e-commerce store of womens products, where anyone from anywhere can buy beauty products.",
         tech: ["HTML", "CSS", "JavaScript", "MongoDB", "Express", "Node", "EJS"],
         git: "https://github.com/suvamAdhikary/MyGlamm-with-Backend.git",
-        demo: "jkhjkh",
-        blog: "juhoih",
-        video: "vdesv",
-        videoCvr: "ferfer",
-        hero: "feefwef"
+        demo: "",
+        blog: "https://medium.com/@yashgarg1402/myglamm-the-all-in-one-beauty-products-website-5b6b82099722",
+        video: "",
+        videoCvr: "",
+        hero: ""
     },
     {   
         id: nanoid(4),
@@ -61,10 +62,10 @@ const projects = [
         summary: "It is an international e-commerce store of womens products, where anyone from anywhere can buy beauty products.",
         tech: ["HTML", "CSS", "JavaScript"],
         git: "https://github.com/suvamAdhikary/MyGlamm.git",
-        demo: "jkhjkh",
-        blog: "juhoih",
-        video: "svdvdv",
-        hero: "feefwef"
+        demo: "https://myglamm-clone-jir1r73x1-suvamadhikary.vercel.app/",
+        blog: "https://medium.com/@yashgarg1402/859f9f1b03e7",
+        video: "",
+        hero: ""
     }
 ]
 

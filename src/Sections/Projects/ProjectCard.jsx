@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     width: 80vw;
+    min-height: 150px;
 
     > h2 {
         font-size: 30px;
@@ -32,6 +33,32 @@ const Wrapper = styled.div`
 
     .pcard__main{
         padding: 10px;
+
+        .project__link--parent{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .summery__tech{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start !important;
+            justify-content: flex-start;
+            height: 80%;
+            gap: 5px;
+
+            > p{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 5px;
+            }
+
+            > p > span {
+                font-weight: 600;
+            }
+        }
     }
 
     @media screen and (max-width: 480px){
@@ -57,17 +84,16 @@ export default function ProjectCard({props}){
         <h2>{name}</h2>
         <div className="pcard__main">
             <div>
-                <div>
+                <div className="summery__tech" >
                     <p>{summary}</p>
-                    <p>{tech.join("  ")}</p>
+                    <p><span>Techstack: </span>{tech.join(" , ")}</p>
                 </div>
                 {/* <iframe src={video} frameborder="0"><img src="" alt="" /></iframe> */}
             </div>
-            <div>
-                <Button goTo={git} >Source Code</Button>
-                {/* <a href={git} target="_blank" rel="noopener noreferrer">GIT</a> */}
-                {/* <a href={blog} target="_blank" rel="noopener noreferrer">BLOG</a>
-                <a href={demo} target="_blank" rel="noopener noreferrer">DEMO</a> */}
+            <div className="project__link--parent">
+                <Button goTo={git} >SOURCE CODE</Button>
+                { blog.length ? <Button goTo={blog}>BLOG</Button> : null}
+                { demo.length ? <Button goTo={demo}>DEMO</Button> : null}
             </div>
         </div>
     </Wrapper>)

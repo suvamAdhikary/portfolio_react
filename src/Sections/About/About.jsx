@@ -113,10 +113,8 @@ export default function About() {
             </Left>
             <Right>
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat duis aute irure dolor in reprehende.</p>
+                <p>I am a Mechanical engineer and a full-stack developer. Alwyes egar to learn and apply new things. Beside computer I love exploring new places meeting new people.</p>
+                
                 <DownArrow nextPage="#project" />
             </Right>
 
