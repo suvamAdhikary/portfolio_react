@@ -62,7 +62,7 @@ const projects = [
         summary: "It is an international e-commerce store of womens products, where anyone from anywhere can buy beauty products.",
         tech: ["HTML", "CSS", "JavaScript"],
         git: "https://github.com/suvamAdhikary/MyGlamm.git",
-        demo: "",
+        demo: "https://myglamm-clone-jir1r73x1-suvamadhikary.vercel.app/",
         blog: "",
         video: "",
         hero: ""
