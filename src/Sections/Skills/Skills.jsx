@@ -111,10 +111,10 @@ export default function Skills(){
                             <h1><SiMongodb /></h1>
                             <p>MongoDB</p>
                         </div>
-                        <div className="skill__card">
+                        {/* <div className="skill__card">
                             <h1><RiReactjsFill /></h1>
                             <p>Mongoose</p>
-                        </div>
+                        </div> */}
                         <div className="skill__card">
                             <h1><SiNextdotjs /></h1>
                             <p>Next.js</p>
