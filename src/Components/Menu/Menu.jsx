@@ -45,6 +45,7 @@ const Wrapper = styled.div`
 
     .active {
         right: 0;
+
     }
 
 `;

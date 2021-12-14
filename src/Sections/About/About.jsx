@@ -16,6 +16,10 @@ const Wrapper = styled.div`
         text-align: center;
         margin-top: 50px;
     }
+
+    .about__description {
+        font-size: 1.15em;
+    }
 `;
 
 const Left = styled.div`
@@ -74,12 +78,16 @@ const Right = styled.div`
 
     > a{
         position: absolute;
-        top: 280%;
+        top: 200%;
         right: 55%;
 
-        img{
+        >h1{
             width: 30px;
             animation: arrowBlink 2000ms infinite;
+
+            /* @media screen and (max-width: 480px){
+                display: none;
+            } */
         }
 
         @keyframes arrowBlink {
@@ -87,6 +95,7 @@ const Right = styled.div`
                 opacity: 0;
             }
         }
+
     }
 
 
@@ -113,7 +122,7 @@ export default function About() {
             </Left>
             <Right>
                 <h1>About Me</h1>
-                <p>I am a Mechanical engineer and a full-stack developer. Alwyes egar to learn and apply new things. Beside computer I love exploring new places meeting new people.</p>
+                <p className="about__description">From childhood whenever I interacted with computers I used to love it. But somehow I end up pursuing Mechanical Engineering which was never my first choice. In this lockdown, I got the time and opportunity to dive into the tech field and give it a try. As much time I'm spending with it I'm loving it. I want to learn more and more and want to build something which will help people.</p>
                 
                 <DownArrow nextPage="#project" />
             </Right>

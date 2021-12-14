@@ -31,6 +31,13 @@ const Wrapper = styled.div`
         cursor: pointer;
         left: ${(props) => props.theme?.left};
     }
+
+    @media screen and (max-width: 480px){
+
+        left: 2px;
+        top: 18px;
+
+    }
 `;
 
 export default function ThemeBtn(){
