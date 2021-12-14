@@ -31,11 +31,11 @@ const Wrapper = styled.div`
         }
     }
 
-    /* @media screen and (max-width: 480px){
+    @media screen and (max-width: 480px){
 
-        flex-direction: column;
+        margin-top: 350px;
 
-    } */
+    }
 `;
 
 const Left = styled.div`
@@ -200,7 +200,7 @@ export default function Contact(){
                     <input type="text" placeholder="Email" name="user_email"/>
                     <input type="text" placeholder="Mobile" name="user_mobile"/>
                     <textarea rows="5" placeholder="message" name="message" />
-                    <button >Submit</button>
+                    <button >SUBMIT</button>
                     {done && "Thank You..."}
                 </form>
             </Right>

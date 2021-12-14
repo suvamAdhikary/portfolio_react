@@ -167,6 +167,7 @@ const Titles = styled.div`
 
 const Description = styled.p`
     /* padding: 50px; */
+    font-size: 1.15em;
 
     @media screen and (max-width: 480px){
 

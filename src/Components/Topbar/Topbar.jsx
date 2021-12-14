@@ -39,6 +39,19 @@ const Wrapper = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 480px){
+
+        width: 480px;
+        display: flex;
+        position: fixed;
+        padding-right: 0px !important;
+
+
+        .topbar__main{
+            padding: 10px 10px;
+        }
+    }
 `;
 
 const Left = styled.div`
@@ -62,6 +75,15 @@ const Left = styled.div`
         width: 120px;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 480px){
+
+
+        #logo{
+            display: none;
+        }
+
+    }
 `;
 
 const Right = styled.div`
@@ -80,7 +102,15 @@ const Right = styled.div`
             transform-origin: left;
             transition: all 2000ms ease;
         }
+
+
+        @media screen and (max-width: 480px){
+            position: absolute;
+            right: 100px;
+        }
+
     }
+
 `;
 
 export default function Topbar({menuOpen, setMenuOpen}){

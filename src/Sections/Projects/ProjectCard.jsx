@@ -31,6 +31,11 @@ const Wrapper = styled.div`
         margin: 3px;
     }
 
+    .project_description{
+        font-size: 1.15em;
+        text-align: left;
+    }
+
     .pcard__main{
         padding: 10px;
 
@@ -38,6 +43,11 @@ const Wrapper = styled.div`
             display: flex;
             justify-content: space-between;
             margin-top: 10px;
+
+            @media screen and (max-width: 480px){
+                flex-wrap: wrap;
+                gap: 5px;
+            }
         }
 
         .summery__tech{
@@ -63,7 +73,7 @@ const Wrapper = styled.div`
 
     @media screen and (max-width: 480px){
 
-        width: 80vw;
+        /* width: 80vw; */
         /* height: 25vh; */
     }
 `;
@@ -85,7 +95,7 @@ export default function ProjectCard({props}){
         <div className="pcard__main">
             <div>
                 <div className="summery__tech" >
-                    <p>{summary}</p>
+                    <p className="project_description">{summary}</p>
                     <p><span>Techstack: </span>{tech.join(" , ")}</p>
                 </div>
                 {/* <iframe src={video} frameborder="0"><img src="" alt="" /></iframe> */}
