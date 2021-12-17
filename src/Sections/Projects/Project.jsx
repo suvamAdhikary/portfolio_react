@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 280px;
     position: relative;
 
     h1 {
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     .down__arrow{
 
         position: absolute;
-        bottom: -130px;
+        bottom: -280px;
         left: 48vw;
 
         >h1 {
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
     @media screen and (max-width: 480px){
 
         padding: 10px 0px;
-        margin-top: 150px;
+        margin-top: 650px;
     }
 `;
 
@@ -64,7 +64,7 @@ const projects = [
         demo: "https://capdas-suvamadhikary.vercel.app/",
         blog: "https://mukhiarambhu.hashnode.dev/developing-capdas-a-sustainabe-e-commerce-store",
         video: "",
-        hero: ""
+        hero: "https://i.ibb.co/wp8kyQR/capDas.png"
     },
     {   
         id: nanoid(4),
@@ -75,7 +75,7 @@ const projects = [
         demo: "https://myglamm-clone-jir1r73x1-suvamadhikary.vercel.app/",
         blog: "https://medium.com/@yashgarg1402/859f9f1b03e7",
         video: "",
-        hero: ""
+        hero: "https://i.ibb.co/4JkD4kB/myglamm.png"
     },
     {   
         id: nanoid(4),
@@ -87,7 +87,7 @@ const projects = [
         blog: "https://medium.com/@yashgarg1402/myglamm-the-all-in-one-beauty-products-website-5b6b82099722",
         video: "",
         videoCvr: "",
-        hero: ""
+        hero: "https://i.ibb.co/MNSJVyv/myGlamm.png"
     }
 ]
 

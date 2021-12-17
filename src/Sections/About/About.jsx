@@ -76,6 +76,11 @@ const Right = styled.div`
     flex: 1;
     position: relative;
 
+    > p {
+        padding: 16px;
+        letter-spacing: 1px;
+    }
+
     > a{
         position: absolute;
         top: 200%;
