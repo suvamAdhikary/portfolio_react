@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     
     justify-content: space-around;
     padding: 20px 30px;
-    margin-top: 150px;
+    margin-top: 350px;
     position: relative;
 
     .skills__main{
@@ -61,6 +61,22 @@ const Wrapper = styled.div`
         min-height: 100px;
         min-width: 100px;
         border-radius: 10px;
+
+        &:hover {
+            animation: zoom ease-in-out 1000ms;
+
+            @keyframes zoom {
+                0% {
+                    transform: rotate(0);
+                }
+                50% {
+                    transform: rotate(180deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
     }
 
     .down__arrow{
@@ -82,7 +98,7 @@ const Wrapper = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        margin-top: 250px;
+        margin-top: 550px;
     }
 
 `;
