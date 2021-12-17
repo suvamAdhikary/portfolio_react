@@ -64,7 +64,7 @@ const projects = [
         demo: "https://capdas-suvamadhikary.vercel.app/",
         blog: "https://mukhiarambhu.hashnode.dev/developing-capdas-a-sustainabe-e-commerce-store",
         video: "",
-        hero: "./src/Assets/Images/capDas.png"
+        hero: "https://i.ibb.co/wp8kyQR/capDas.png"
     },
     {   
         id: nanoid(4),
@@ -75,7 +75,7 @@ const projects = [
         demo: "https://myglamm-clone-jir1r73x1-suvamadhikary.vercel.app/",
         blog: "https://medium.com/@yashgarg1402/859f9f1b03e7",
         video: "",
-        hero: "./src/Assets/Images/myglamm.png"
+        hero: "https://i.ibb.co/4JkD4kB/myglamm.png"
     },
     {   
         id: nanoid(4),
@@ -87,7 +87,7 @@ const projects = [
         blog: "https://medium.com/@yashgarg1402/myglamm-the-all-in-one-beauty-products-website-5b6b82099722",
         video: "",
         videoCvr: "",
-        hero: "./src/Assets/Images/myGlamm.png"
+        hero: "https://i.ibb.co/MNSJVyv/myGlamm.png"
     }
 ]
 
