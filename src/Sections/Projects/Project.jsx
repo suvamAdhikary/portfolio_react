@@ -83,7 +83,7 @@ const projects = [
         summary: 'It is an extension project of our "myglamm clone". Here we build our backend with MongoDB for this website, and also converted our whole codebase in the MVC model with the help of "EJS".',
         tech: ["CSS", "JavaScript", "MongoDB", "Express", "Node", "EJS"],
         git: "https://github.com/suvamAdhikary/MyGlamm-with-Backend.git",
-        demo: "",
+        demo: "https://myglamm-clone.herokuapp.com/",
         blog: "https://medium.com/@yashgarg1402/myglamm-the-all-in-one-beauty-products-website-5b6b82099722",
         video: "",
         videoCvr: "",
