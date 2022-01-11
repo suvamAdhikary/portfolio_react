@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     
     justify-content: space-around;
     padding: 20px 30px;
-    margin-top: 350px;
+    margin-top: 600px;
     position: relative;
 
     .skills__main{
@@ -82,7 +82,7 @@ const Wrapper = styled.div`
     .down__arrow{
 
         position: absolute;
-        bottom: -50px;
+        bottom: -60px;
         left: 48vw;
 
         >h1 {
@@ -98,7 +98,7 @@ const Wrapper = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        margin-top: 550px;
+        margin-top: 950px;
     }
 
 `;
@@ -140,6 +140,10 @@ export default function Skills(){
                             <p>Typescript</p>
                         </div>
                         <div className="skill__card">
+                            <h1><SiNextdotjs /></h1>
+                            <p>Next.js</p>
+                        </div>
+                        <div className="skill__card">
                             <h1><FaSass /></h1>
                             <p>Sass</p>
                         </div>
@@ -167,10 +171,6 @@ export default function Skills(){
                         <div className="skill__card">
                             <h1><SiRedis /></h1>
                             <p>Redis</p>
-                        </div>
-                        <div className="skill__card">
-                            <h1><SiNextdotjs /></h1>
-                            <p>Next.js</p>
                         </div>
                     </div>
                 </fieldset>
