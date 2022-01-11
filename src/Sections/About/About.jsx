@@ -83,7 +83,7 @@ const Right = styled.div`
 
     > a{
         position: absolute;
-        top: 200%;
+        top: 180%;
         right: 55%;
 
         >h1{

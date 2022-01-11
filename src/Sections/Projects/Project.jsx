@@ -5,14 +5,14 @@ import ProjectCard from "./ProjectCard";
 
 
 const Wrapper = styled.div`
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
     width: 100vw;
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 280px;
+    margin-top: 420px;
     position: relative;
 
     h1 {
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     .down__arrow{
 
         position: absolute;
-        bottom: -280px;
+        bottom: -480px;
         left: 48vw;
 
         >h1 {
@@ -50,11 +50,22 @@ const Wrapper = styled.div`
     @media screen and (max-width: 480px){
 
         padding: 10px 0px;
-        margin-top: 650px;
+        margin-top: 1050px;
     }
 `;
 
 const projects = [
+        {   
+        id: nanoid(4),
+        name: "Dineout Clone",
+        summary: "It is a collaborative project with the design team, we build the flow from the home page to booking confirmation",
+        tech: ["MongoDB", "Express", "React", "Node", "Redux", "Styled Components"],
+        git: "https://github.com/suvamAdhikary/dineout_clone.git",
+        demo: "https://dineout-clone.vercel.app/",
+        blog: "https://medium.com/@arnavi.gode96/dineout-clone-81f57cea770c",
+        video: "",
+        hero: "https://i.ibb.co/KKJTdhZ/dineout.png"
+    },
     {   
         id: nanoid(4),
         name: "CapdaS",
