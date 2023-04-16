@@ -151,7 +151,6 @@ export default function Contact(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(form.current, e.target);
         emailjs.sendForm('service_rraid2l', 'template_n2j15lj', form.current, 'user_EBpSesarMoJ96DDJNi7Wf')
             .then(
                 (result) => {
