@@ -146,13 +146,13 @@ const Right = styled.div`
 `;
 
 export default function Contact(){
-    const formRef = useRef();
+    const form = useRef();
     const [done, setDone] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_rraid2l', 'template_n2j15lj', formRef.current, 'user_EBpSesarMoJ96DDJNi7Wf')
+        console.log(form.current, e.target);
+        emailjs.sendForm('service_rraid2l', 'template_n2j15lj', form.current, 'user_EBpSesarMoJ96DDJNi7Wf')
             .then(
                 (result) => {
                   console.log(result.text);
@@ -194,12 +194,12 @@ export default function Contact(){
                 </div>
             </Left>
             <Right>
-                <form ref={formRef} onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Name" name="user_name"/>
+                <form ref={form} onSubmit={handleSubmit}>
+                    <input type="text" placeholder="Name" name="user_name" required/>
                     <input type="text" placeholder="Subject" name="user_subject"/>
-                    <input type="text" placeholder="Email" name="user_email"/>
+                    <input type="email" placeholder="Email" name="user_email" required/>
                     <input type="text" placeholder="Mobile" name="user_mobile"/>
-                    <textarea rows="5" placeholder="message" name="message" />
+                    <textarea rows="5" placeholder="message" name="message" required/>
                     <button >SUBMIT</button>
                     {done && "Thank You..."}
                 </form>
