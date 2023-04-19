@@ -4,6 +4,7 @@ import Contact from "./Contact/Contact";
 import Intro from "./Intro/Intro";
 import Project from "./Projects/Project";
 import Skills from "./Skills/Skills";
+import Git from "./Git";
 
 
 const Wrapper = styled.div`
@@ -31,6 +32,7 @@ export default function Sections() {
             <About />
             <Project />
             <Skills />
+            <Git />
             <Contact />
         </Wrapper>
     )
